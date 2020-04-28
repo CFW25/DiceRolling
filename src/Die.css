@@ -1,0 +1,30 @@
+.Die {
+    font-size:20rem;
+    padding: 5rem;
+    color: slateblue;
+}
+
+.shaking {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-12px, 0, 0) rotate3d(0,0,1,-5deg);
+    }
+    
+    20%, 80% {
+        transform: translate3d(14px, 0, 0) rotate3d(0,0,1,5deg);;
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-18px, 0, 0) rotate3d(0,0,1,-5deg);;
+    }
+
+    40%, 60% {
+        transform: translate3d(18px, 0, 0) rotate3d(0,0,1,5deg);;
+    }
+    }
